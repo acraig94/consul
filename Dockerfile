@@ -1,5 +1,5 @@
-FROM ubuntu:14.04
-MAINTAINER Alan <acraig94@gmail.com> 
+FROM ubuntu:16.04
+MAINTAINER Alan "acraig94@gmail.com"
 ENV REFRESHED_AT 2014-08-01
 
 RUN apt-get -qqy update
@@ -18,5 +18,3 @@ EXPOSE 53/udp 8300 8301 8301/udp 8302 8302/udp 8400 8500
 
 VOLUME ["/data"]
 
-ENTRYPOINT [ "/usr/sbin/consul", "agent", "-config-dir=/config" ]
-CMD []
