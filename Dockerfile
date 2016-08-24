@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:14.04
 MAINTAINER Alan "acraig94@gmail.com"
 ENV REFRESHED_AT 2014-08-01
 
